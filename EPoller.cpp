@@ -8,6 +8,7 @@ EPoller::EPoller(){
     assert(epfd_>0);
 }
 void EPoller::epoll_add(SP_Channel request){//add fd
+
     int fd=request->getFd();
     if(fd>=MAXFDS) return;
     fd2chan_[fd]=request;
@@ -30,6 +31,7 @@ void EPoller::epoll_delete(SP_Channel request){//delete fd
     assert(ret!=-1);
 
     fd2chan_[fd].reset();
+   // close(fd);
     
 }
 void EPoller::epoll_update(SP_Channel request){//update timer
@@ -47,13 +49,11 @@ void EPoller::epoll_update(SP_Channel request){//update timer
 std::vector<SP_Channel> EPoller::poll(){
    std::vector<SP_Channel> active;
    int ret_num=epoll_wait(epfd_,&(events_[0]),MAXFDS,-1);
-   
+       
    for(int i=0;i<ret_num;i++){
        int fd=events_[i].data.fd;
-       std::cout<<fd<<std::endl;
        fd2chan_[fd]->setRevent(events_[i].events);
        active.push_back(fd2chan_[fd]);
    }
-   std::cout<<ret_num<<std::endl;
    return active;
 }

@@ -135,9 +135,48 @@ CMakeFiles/myWebserver.dir/Server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/myWebserver.dir/Server.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hli/code/hliwebserver/Server.cpp -o CMakeFiles/myWebserver.dir/Server.cpp.s
 
+CMakeFiles/myWebserver.dir/Thread.cpp.o: CMakeFiles/myWebserver.dir/flags.make
+CMakeFiles/myWebserver.dir/Thread.cpp.o: ../Thread.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hli/code/hliwebserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/myWebserver.dir/Thread.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/myWebserver.dir/Thread.cpp.o -c /home/hli/code/hliwebserver/Thread.cpp
+
+CMakeFiles/myWebserver.dir/Thread.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/myWebserver.dir/Thread.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hli/code/hliwebserver/Thread.cpp > CMakeFiles/myWebserver.dir/Thread.cpp.i
+
+CMakeFiles/myWebserver.dir/Thread.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/myWebserver.dir/Thread.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hli/code/hliwebserver/Thread.cpp -o CMakeFiles/myWebserver.dir/Thread.cpp.s
+
+CMakeFiles/myWebserver.dir/ThreadEventLoop.cpp.o: CMakeFiles/myWebserver.dir/flags.make
+CMakeFiles/myWebserver.dir/ThreadEventLoop.cpp.o: ../ThreadEventLoop.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hli/code/hliwebserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/myWebserver.dir/ThreadEventLoop.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/myWebserver.dir/ThreadEventLoop.cpp.o -c /home/hli/code/hliwebserver/ThreadEventLoop.cpp
+
+CMakeFiles/myWebserver.dir/ThreadEventLoop.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/myWebserver.dir/ThreadEventLoop.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hli/code/hliwebserver/ThreadEventLoop.cpp > CMakeFiles/myWebserver.dir/ThreadEventLoop.cpp.i
+
+CMakeFiles/myWebserver.dir/ThreadEventLoop.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/myWebserver.dir/ThreadEventLoop.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hli/code/hliwebserver/ThreadEventLoop.cpp -o CMakeFiles/myWebserver.dir/ThreadEventLoop.cpp.s
+
+CMakeFiles/myWebserver.dir/ThreadEventLoopPoll.cpp.o: CMakeFiles/myWebserver.dir/flags.make
+CMakeFiles/myWebserver.dir/ThreadEventLoopPoll.cpp.o: ../ThreadEventLoopPoll.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hli/code/hliwebserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/myWebserver.dir/ThreadEventLoopPoll.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/myWebserver.dir/ThreadEventLoopPoll.cpp.o -c /home/hli/code/hliwebserver/ThreadEventLoopPoll.cpp
+
+CMakeFiles/myWebserver.dir/ThreadEventLoopPoll.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/myWebserver.dir/ThreadEventLoopPoll.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hli/code/hliwebserver/ThreadEventLoopPoll.cpp > CMakeFiles/myWebserver.dir/ThreadEventLoopPoll.cpp.i
+
+CMakeFiles/myWebserver.dir/ThreadEventLoopPoll.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/myWebserver.dir/ThreadEventLoopPoll.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hli/code/hliwebserver/ThreadEventLoopPoll.cpp -o CMakeFiles/myWebserver.dir/ThreadEventLoopPoll.cpp.s
+
 CMakeFiles/myWebserver.dir/Util.cpp.o: CMakeFiles/myWebserver.dir/flags.make
 CMakeFiles/myWebserver.dir/Util.cpp.o: ../Util.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hli/code/hliwebserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/myWebserver.dir/Util.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hli/code/hliwebserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/myWebserver.dir/Util.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/myWebserver.dir/Util.cpp.o -c /home/hli/code/hliwebserver/Util.cpp
 
 CMakeFiles/myWebserver.dir/Util.cpp.i: cmake_force
@@ -156,6 +195,9 @@ myWebserver_OBJECTS = \
 "CMakeFiles/myWebserver.dir/HttpData.cpp.o" \
 "CMakeFiles/myWebserver.dir/Main.cpp.o" \
 "CMakeFiles/myWebserver.dir/Server.cpp.o" \
+"CMakeFiles/myWebserver.dir/Thread.cpp.o" \
+"CMakeFiles/myWebserver.dir/ThreadEventLoop.cpp.o" \
+"CMakeFiles/myWebserver.dir/ThreadEventLoopPoll.cpp.o" \
 "CMakeFiles/myWebserver.dir/Util.cpp.o"
 
 # External object files for target myWebserver
@@ -167,10 +209,13 @@ myWebserver: CMakeFiles/myWebserver.dir/EventLoop.cpp.o
 myWebserver: CMakeFiles/myWebserver.dir/HttpData.cpp.o
 myWebserver: CMakeFiles/myWebserver.dir/Main.cpp.o
 myWebserver: CMakeFiles/myWebserver.dir/Server.cpp.o
+myWebserver: CMakeFiles/myWebserver.dir/Thread.cpp.o
+myWebserver: CMakeFiles/myWebserver.dir/ThreadEventLoop.cpp.o
+myWebserver: CMakeFiles/myWebserver.dir/ThreadEventLoopPoll.cpp.o
 myWebserver: CMakeFiles/myWebserver.dir/Util.cpp.o
 myWebserver: CMakeFiles/myWebserver.dir/build.make
 myWebserver: CMakeFiles/myWebserver.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hli/code/hliwebserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable myWebserver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hli/code/hliwebserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable myWebserver"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/myWebserver.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

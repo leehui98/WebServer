@@ -1,35 +1,44 @@
 #include"Server.h"
+
 #include<iostream>
-Server::Server(EventLoop * loop,int port):
+Server::Server(EventLoop * loop,int port,int threadnum):
     listenfd_(socket_bind_listen(port)),
-    loop_(loop) 
+    loop_(loop),
+    acceptchannel_(new Channel(loop_,listenfd_)),
+    threadpoll_(loop_,threadnum)
 {
-    acceptchannel_=static_cast<std::shared_ptr<Channel>>(new Channel(loop,listenfd_));
     acceptchannel_->setCallRead(std::bind(&Server::acceptSock,this));
     setNoBlocking(listenfd_);
     loop_->getEPoll()->epoll_add(acceptchannel_);
 }
 void Server::start(){
-    
+    threadpoll_.start();
+}
+void* addFD(void* a){
+    attr *at=static_cast<attr*>(a);
+    int acceptfd=at->fd;
+    std::shared_ptr<EventLoop> loop=at->loop;
+    std::shared_ptr<HttpData> request(new HttpData(loop,acceptfd));        
+    request->getChannel()->setHolder(request);
+    return NULL;
 }
 void Server::acceptSock(){
     int acceptfd;
-    
     while((acceptfd=accept(listenfd_,NULL,NULL))>=0){
-        //std::cout<<"new socket"<<std::endl;
+        
         if(acceptfd>MAXFDS) continue;
-        sockfd=acceptfd;
-        std::shared_ptr<Channel> request=static_cast<std::shared_ptr<Channel>>(new Channel(loop_,acceptfd));
         setNoBlocking(acceptfd);
-        request->setCallRead(std::bind(&Server::Read,this));
-        loop_->getEPoll()->epoll_add(request);
-
+        setNodely(acceptfd);
+        std::shared_ptr<EventLoop> loop=threadpoll_.getNextEventloop();
+        Functor f;
+        f.fun=addFD;
+        f.a.fd=acceptfd;
+        f.a.loop=loop;
+        {
+            MutexGuard lock(loop->getMutex());
+            loop->appendingFuntor(f);
+        }
+        loop->wakeup();        
     }
-    std::cout<<"ending socket"<<std::endl;
-}
-void Server::Read(){
-    char buff[10];
-    int n=read(sockfd,buff,10);
-    buff[n]='\0';
-    std::cout<<"hello"<<buff<<std::endl;
+    std::cout<<"new client"<<std::endl;
 }

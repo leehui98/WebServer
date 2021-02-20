@@ -52,6 +52,17 @@ int readn(int fd,std::string &buff,int size){
     return read_size;
 
 }
+int readn(int fd,std::string &in){
+    char buff[MaxBuff];
+    int size=0;
+    while(true){
+        int n=read(fd,buff,MaxBuff);
+        if(n<=0) return size;
+        else if(n>0) size+=n;
+        in+=std::string(buff,buff+n);
+    }
+    return size;
+}
 int writen(int fd,std::string &buff){
     int size=buff.size();
     int write_size=0;

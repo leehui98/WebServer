@@ -4,7 +4,7 @@
 #include<unistd.h>
 #include"EventLoop.h"
 #include"Server.h"
-
+#include"Logging.h"
 #include<sys/time.h>
 using namespace std;
 
@@ -21,10 +21,10 @@ int main(int argc,char* argv[]){
             }
         }
     }
+    Log<<"start WebServer";
     EventLoop loop_;
-    Server server_(&loop_,port);
+    Server server_(&loop_,port,4);
     server_.start();
     loop_.loop();
-    
     return 0;
 }

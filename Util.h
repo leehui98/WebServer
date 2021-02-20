@@ -9,7 +9,7 @@
 #include<unistd.h>
 #include<sys/eventfd.h>
 
-#define MaxBuff 64*1024
+#define MaxBuff 1024
 int  socket_bind_listen(int port);
 int setNoBlocking(int fd);
 void setNodely(int fd);//关闭Negal算法

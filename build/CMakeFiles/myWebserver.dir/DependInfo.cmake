@@ -10,6 +10,9 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/hli/code/hliwebserver/HttpData.cpp" "/home/hli/code/hliwebserver/build/CMakeFiles/myWebserver.dir/HttpData.cpp.o"
   "/home/hli/code/hliwebserver/Main.cpp" "/home/hli/code/hliwebserver/build/CMakeFiles/myWebserver.dir/Main.cpp.o"
   "/home/hli/code/hliwebserver/Server.cpp" "/home/hli/code/hliwebserver/build/CMakeFiles/myWebserver.dir/Server.cpp.o"
+  "/home/hli/code/hliwebserver/Thread.cpp" "/home/hli/code/hliwebserver/build/CMakeFiles/myWebserver.dir/Thread.cpp.o"
+  "/home/hli/code/hliwebserver/ThreadEventLoop.cpp" "/home/hli/code/hliwebserver/build/CMakeFiles/myWebserver.dir/ThreadEventLoop.cpp.o"
+  "/home/hli/code/hliwebserver/ThreadEventLoopPoll.cpp" "/home/hli/code/hliwebserver/build/CMakeFiles/myWebserver.dir/ThreadEventLoopPoll.cpp.o"
   "/home/hli/code/hliwebserver/Util.cpp" "/home/hli/code/hliwebserver/build/CMakeFiles/myWebserver.dir/Util.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

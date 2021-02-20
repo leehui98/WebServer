@@ -1,8 +1,9 @@
 #include"Channel.h"
 #include"EventLoop.h"
 
-Channel::Channel(EventLoop* loop,int fd):loop_(loop)
+Channel::Channel(std::shared_ptr<EventLoop> loop,int fd):loop_(loop)
 {
+    
     bzero(&event_,sizeof(event_));
     fd_=fd;
     event_=EPOLLIN|EPOLLET;
@@ -26,6 +27,9 @@ void Channel::setCallWrite(CallBack &&cb){
 }
 void Channel::setRevent(const __uint32_t &e){
     revent_=e;
+}
+void Channel::setEvent(const __uint32_t &e){
+    event_=e;
 }
 void Channel::handleEvent(){
     if(revent_&EPOLLIN){

@@ -6,6 +6,7 @@ CMakeFiles/myWebserver.dir/Channel.cpp.o: ../Channel.h
 CMakeFiles/myWebserver.dir/Channel.cpp.o: ../EPoller.h
 CMakeFiles/myWebserver.dir/Channel.cpp.o: ../EventLoop.h
 CMakeFiles/myWebserver.dir/Channel.cpp.o: ../HttpData.h
+CMakeFiles/myWebserver.dir/Channel.cpp.o: ../Mutex.h
 CMakeFiles/myWebserver.dir/Channel.cpp.o: ../Timer.h
 CMakeFiles/myWebserver.dir/Channel.cpp.o: ../Util.h
 CMakeFiles/myWebserver.dir/Channel.cpp.o: ../nocopyable.h
@@ -22,6 +23,7 @@ CMakeFiles/myWebserver.dir/EventLoop.cpp.o: ../EPoller.h
 CMakeFiles/myWebserver.dir/EventLoop.cpp.o: ../EventLoop.cpp
 CMakeFiles/myWebserver.dir/EventLoop.cpp.o: ../EventLoop.h
 CMakeFiles/myWebserver.dir/EventLoop.cpp.o: ../HttpData.h
+CMakeFiles/myWebserver.dir/EventLoop.cpp.o: ../Mutex.h
 CMakeFiles/myWebserver.dir/EventLoop.cpp.o: ../Timer.h
 CMakeFiles/myWebserver.dir/EventLoop.cpp.o: ../Util.h
 CMakeFiles/myWebserver.dir/EventLoop.cpp.o: ../nocopyable.h
@@ -31,6 +33,7 @@ CMakeFiles/myWebserver.dir/HttpData.cpp.o: ../EPoller.h
 CMakeFiles/myWebserver.dir/HttpData.cpp.o: ../EventLoop.h
 CMakeFiles/myWebserver.dir/HttpData.cpp.o: ../HttpData.cpp
 CMakeFiles/myWebserver.dir/HttpData.cpp.o: ../HttpData.h
+CMakeFiles/myWebserver.dir/HttpData.cpp.o: ../Mutex.h
 CMakeFiles/myWebserver.dir/HttpData.cpp.o: ../Timer.h
 CMakeFiles/myWebserver.dir/HttpData.cpp.o: ../Util.h
 CMakeFiles/myWebserver.dir/HttpData.cpp.o: ../nocopyable.h
@@ -39,8 +42,13 @@ CMakeFiles/myWebserver.dir/Main.cpp.o: ../Channel.h
 CMakeFiles/myWebserver.dir/Main.cpp.o: ../EPoller.h
 CMakeFiles/myWebserver.dir/Main.cpp.o: ../EventLoop.h
 CMakeFiles/myWebserver.dir/Main.cpp.o: ../HttpData.h
+CMakeFiles/myWebserver.dir/Main.cpp.o: ../Logging.h
 CMakeFiles/myWebserver.dir/Main.cpp.o: ../Main.cpp
+CMakeFiles/myWebserver.dir/Main.cpp.o: ../Mutex.h
 CMakeFiles/myWebserver.dir/Main.cpp.o: ../Server.h
+CMakeFiles/myWebserver.dir/Main.cpp.o: ../Thread.h
+CMakeFiles/myWebserver.dir/Main.cpp.o: ../ThreadEventLoop.h
+CMakeFiles/myWebserver.dir/Main.cpp.o: ../ThreadEventLoopPoll.h
 CMakeFiles/myWebserver.dir/Main.cpp.o: ../Timer.h
 CMakeFiles/myWebserver.dir/Main.cpp.o: ../Util.h
 CMakeFiles/myWebserver.dir/Main.cpp.o: ../nocopyable.h
@@ -49,11 +57,43 @@ CMakeFiles/myWebserver.dir/Server.cpp.o: ../Channel.h
 CMakeFiles/myWebserver.dir/Server.cpp.o: ../EPoller.h
 CMakeFiles/myWebserver.dir/Server.cpp.o: ../EventLoop.h
 CMakeFiles/myWebserver.dir/Server.cpp.o: ../HttpData.h
+CMakeFiles/myWebserver.dir/Server.cpp.o: ../Mutex.h
 CMakeFiles/myWebserver.dir/Server.cpp.o: ../Server.cpp
 CMakeFiles/myWebserver.dir/Server.cpp.o: ../Server.h
+CMakeFiles/myWebserver.dir/Server.cpp.o: ../Thread.h
+CMakeFiles/myWebserver.dir/Server.cpp.o: ../ThreadEventLoop.h
+CMakeFiles/myWebserver.dir/Server.cpp.o: ../ThreadEventLoopPoll.h
 CMakeFiles/myWebserver.dir/Server.cpp.o: ../Timer.h
 CMakeFiles/myWebserver.dir/Server.cpp.o: ../Util.h
 CMakeFiles/myWebserver.dir/Server.cpp.o: ../nocopyable.h
+
+CMakeFiles/myWebserver.dir/Thread.cpp.o: ../Thread.cpp
+CMakeFiles/myWebserver.dir/Thread.cpp.o: ../Thread.h
+
+CMakeFiles/myWebserver.dir/ThreadEventLoop.cpp.o: ../Channel.h
+CMakeFiles/myWebserver.dir/ThreadEventLoop.cpp.o: ../EPoller.h
+CMakeFiles/myWebserver.dir/ThreadEventLoop.cpp.o: ../EventLoop.h
+CMakeFiles/myWebserver.dir/ThreadEventLoop.cpp.o: ../HttpData.h
+CMakeFiles/myWebserver.dir/ThreadEventLoop.cpp.o: ../Mutex.h
+CMakeFiles/myWebserver.dir/ThreadEventLoop.cpp.o: ../Thread.h
+CMakeFiles/myWebserver.dir/ThreadEventLoop.cpp.o: ../ThreadEventLoop.cpp
+CMakeFiles/myWebserver.dir/ThreadEventLoop.cpp.o: ../ThreadEventLoop.h
+CMakeFiles/myWebserver.dir/ThreadEventLoop.cpp.o: ../Timer.h
+CMakeFiles/myWebserver.dir/ThreadEventLoop.cpp.o: ../Util.h
+CMakeFiles/myWebserver.dir/ThreadEventLoop.cpp.o: ../nocopyable.h
+
+CMakeFiles/myWebserver.dir/ThreadEventLoopPoll.cpp.o: ../Channel.h
+CMakeFiles/myWebserver.dir/ThreadEventLoopPoll.cpp.o: ../EPoller.h
+CMakeFiles/myWebserver.dir/ThreadEventLoopPoll.cpp.o: ../EventLoop.h
+CMakeFiles/myWebserver.dir/ThreadEventLoopPoll.cpp.o: ../HttpData.h
+CMakeFiles/myWebserver.dir/ThreadEventLoopPoll.cpp.o: ../Mutex.h
+CMakeFiles/myWebserver.dir/ThreadEventLoopPoll.cpp.o: ../Thread.h
+CMakeFiles/myWebserver.dir/ThreadEventLoopPoll.cpp.o: ../ThreadEventLoop.h
+CMakeFiles/myWebserver.dir/ThreadEventLoopPoll.cpp.o: ../ThreadEventLoopPoll.cpp
+CMakeFiles/myWebserver.dir/ThreadEventLoopPoll.cpp.o: ../ThreadEventLoopPoll.h
+CMakeFiles/myWebserver.dir/ThreadEventLoopPoll.cpp.o: ../Timer.h
+CMakeFiles/myWebserver.dir/ThreadEventLoopPoll.cpp.o: ../Util.h
+CMakeFiles/myWebserver.dir/ThreadEventLoopPoll.cpp.o: ../nocopyable.h
 
 CMakeFiles/myWebserver.dir/Util.cpp.o: ../Util.cpp
 CMakeFiles/myWebserver.dir/Util.cpp.o: ../Util.h

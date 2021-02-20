@@ -285,6 +285,87 @@ Server.cpp.s:
 	$(MAKE) -f CMakeFiles/myWebserver.dir/build.make CMakeFiles/myWebserver.dir/Server.cpp.s
 .PHONY : Server.cpp.s
 
+Thread.o: Thread.cpp.o
+
+.PHONY : Thread.o
+
+# target to build an object file
+Thread.cpp.o:
+	$(MAKE) -f CMakeFiles/myWebserver.dir/build.make CMakeFiles/myWebserver.dir/Thread.cpp.o
+.PHONY : Thread.cpp.o
+
+Thread.i: Thread.cpp.i
+
+.PHONY : Thread.i
+
+# target to preprocess a source file
+Thread.cpp.i:
+	$(MAKE) -f CMakeFiles/myWebserver.dir/build.make CMakeFiles/myWebserver.dir/Thread.cpp.i
+.PHONY : Thread.cpp.i
+
+Thread.s: Thread.cpp.s
+
+.PHONY : Thread.s
+
+# target to generate assembly for a file
+Thread.cpp.s:
+	$(MAKE) -f CMakeFiles/myWebserver.dir/build.make CMakeFiles/myWebserver.dir/Thread.cpp.s
+.PHONY : Thread.cpp.s
+
+ThreadEventLoop.o: ThreadEventLoop.cpp.o
+
+.PHONY : ThreadEventLoop.o
+
+# target to build an object file
+ThreadEventLoop.cpp.o:
+	$(MAKE) -f CMakeFiles/myWebserver.dir/build.make CMakeFiles/myWebserver.dir/ThreadEventLoop.cpp.o
+.PHONY : ThreadEventLoop.cpp.o
+
+ThreadEventLoop.i: ThreadEventLoop.cpp.i
+
+.PHONY : ThreadEventLoop.i
+
+# target to preprocess a source file
+ThreadEventLoop.cpp.i:
+	$(MAKE) -f CMakeFiles/myWebserver.dir/build.make CMakeFiles/myWebserver.dir/ThreadEventLoop.cpp.i
+.PHONY : ThreadEventLoop.cpp.i
+
+ThreadEventLoop.s: ThreadEventLoop.cpp.s
+
+.PHONY : ThreadEventLoop.s
+
+# target to generate assembly for a file
+ThreadEventLoop.cpp.s:
+	$(MAKE) -f CMakeFiles/myWebserver.dir/build.make CMakeFiles/myWebserver.dir/ThreadEventLoop.cpp.s
+.PHONY : ThreadEventLoop.cpp.s
+
+ThreadEventLoopPoll.o: ThreadEventLoopPoll.cpp.o
+
+.PHONY : ThreadEventLoopPoll.o
+
+# target to build an object file
+ThreadEventLoopPoll.cpp.o:
+	$(MAKE) -f CMakeFiles/myWebserver.dir/build.make CMakeFiles/myWebserver.dir/ThreadEventLoopPoll.cpp.o
+.PHONY : ThreadEventLoopPoll.cpp.o
+
+ThreadEventLoopPoll.i: ThreadEventLoopPoll.cpp.i
+
+.PHONY : ThreadEventLoopPoll.i
+
+# target to preprocess a source file
+ThreadEventLoopPoll.cpp.i:
+	$(MAKE) -f CMakeFiles/myWebserver.dir/build.make CMakeFiles/myWebserver.dir/ThreadEventLoopPoll.cpp.i
+.PHONY : ThreadEventLoopPoll.cpp.i
+
+ThreadEventLoopPoll.s: ThreadEventLoopPoll.cpp.s
+
+.PHONY : ThreadEventLoopPoll.s
+
+# target to generate assembly for a file
+ThreadEventLoopPoll.cpp.s:
+	$(MAKE) -f CMakeFiles/myWebserver.dir/build.make CMakeFiles/myWebserver.dir/ThreadEventLoopPoll.cpp.s
+.PHONY : ThreadEventLoopPoll.cpp.s
+
 Util.o: Util.cpp.o
 
 .PHONY : Util.o
@@ -339,6 +420,15 @@ help:
 	@echo "... Server.o"
 	@echo "... Server.i"
 	@echo "... Server.s"
+	@echo "... Thread.o"
+	@echo "... Thread.i"
+	@echo "... Thread.s"
+	@echo "... ThreadEventLoop.o"
+	@echo "... ThreadEventLoop.i"
+	@echo "... ThreadEventLoop.s"
+	@echo "... ThreadEventLoopPoll.o"
+	@echo "... ThreadEventLoopPoll.i"
+	@echo "... ThreadEventLoopPoll.s"
 	@echo "... Util.o"
 	@echo "... Util.i"
 	@echo "... Util.s"

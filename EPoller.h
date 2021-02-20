@@ -23,5 +23,4 @@ private:
     static const int MAXFDS=10000;
     epoll_event events_[MAXFDS];//active events
     SP_Channel fd2chan_[MAXFDS];
-    SP_HttpData fd2http_[MAXFDS];
 };
