@@ -88,3 +88,13 @@ int writen(int fd,char* buff,int size){
     }
     return write_size;
 }
+int ShutdownWR(int fd){
+    int ret=shutdown(fd,SHUT_WR);
+    assert(ret!=-1);
+    return ret;
+}
+int ShutdwonRDWR(int fd){
+        int ret=shutdown(fd,SHUT_RDWR);
+        assert(ret!=-1);
+        return ret;
+}

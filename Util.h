@@ -17,3 +17,5 @@ int readn(int fd,std::string &buff);
 int writen(int fd,std::string &buff);
 int writen(int fd,char* buff,int size);
 int geteventfd();
+int ShutdownWR(int fd);
+int ShutdwonRDWR(int fd);

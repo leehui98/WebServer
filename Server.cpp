@@ -40,5 +40,5 @@ void Server::acceptSock(){
         }
         loop->wakeup();        
     }
-    std::cout<<"new client"<<std::endl;
+    //std::cout<<"new client"<<std::endl;
 }

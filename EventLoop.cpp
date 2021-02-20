@@ -27,7 +27,7 @@ void EventLoop::wakeup(){
 }
 
 void EventLoop::addfd(){//添加用户
-    std::cout<<"wake and add fd"<<std::endl;
+    //std::cout<<"wake and add fd"<<std::endl;
     std::vector<Functor> funs;
      {
             MutexGuard lock(getMutex());
