@@ -1,3 +1,0 @@
-/home/hli/code/hliwebserver/build/CMakeFiles/rebuild_cache.dir
-/home/hli/code/hliwebserver/build/CMakeFiles/edit_cache.dir
-/home/hli/code/hliwebserver/build/CMakeFiles/myWebserver.dir
